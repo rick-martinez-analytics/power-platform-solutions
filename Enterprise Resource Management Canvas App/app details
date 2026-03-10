@@ -1,1 +1,91 @@
+📌 Resource Management Tool (Power Apps)
+Overview
+The Resource Management Tool is an enterprise Power Platform application designed to centralize and streamline system access administration, equipment provisioning, and asset tracking for a department of 300+ employees.
+Originally modernized from a legacy Microsoft Access database, the solution was expanded with new capabilities to support leadership visibility, asset management, and governance documentation.
+The tool ensures:
+- New hires receive required equipment and system access on day one
+- Existing employees receive appropriate access when cross‑training
+- Loaner laptops are tracked, reserved, and returned on time
+- Returned assets are documented and traceable
+- All system access governance and process documentation is stored in one place
+
+Business Problem
+Before this application existed, critical workflows were fragmented across multiple tools:
+- System access and workstation requests lived in a legacy Access database
+- Loaner laptop availability, TWA/LDA tracking, and return‑to‑stock workflows had no formal process
+- Returned assets could only be traced by searching old ServiceNow emails
+- RBAC roles, ad hoc access procedures, Power Platform governance, EUC governance, QlikSense governance, and system access process flows were scattered across Word/Excel files in SharePoint
+- Leadership had no centralized visibility into requests, assets, or access governance
+This created inefficiencies, inconsistent processes, and operational risk.
+
+Solution
+The Resource Management Tool consolidates all system access and equipment workflows into a single governed Power App. It provides:
+- A unified interface for requesting system access, equipment, and loaner laptops
+- Automated routing and notifications for all request types
+- Real‑time visibility into request status for both requesters and system admins
+- A centralized repository for all RBAC, ad hoc access, and governance documentation
+- Asset tracking for loaner laptops and returned equipment
+- Integration with other automated processes that track TWA/LDA assignments
+The tool serves as the operational hub for system access administration and equipment management across the department.
+
+Key Features
+- Automated Notifications (Power Automate)
+- Request submission confirmations
+- Loaner laptop reservation and return reminders
+- Alerts to system admins for TWA/LDA access changes
+- Overdue loaner notifications sent to employee + supervisor
+- Role‑Based Access Documentation
+- Galleries and forms display RBAC roles, ad hoc accesses, and governance details
+- Organized across multiple screens by department and platform (Power Platform, EUC, QlikSense, etc.)
+- System Access Request Management
+- Requesters can view submitted/in‑progress requests
+- System admins can filter, process, and complete requests from dedicated admin screens
+- Loaner Laptop Management
+- View available loaners
+- Check out and return devices
+- Automated overdue reminders
+- TWA/LDA Tracking
+- Filterable gallery for active assignments
+- Integrated with a separate automated process for assignment tracking
+- Return‑to‑Stock Tracking
+- View all returned assets, associated users, dates, and ServiceNow ticket numbers
+- In‑App Security
+- Role‑based access enforced through a SharePoint security table
+- Certain screens and actions restricted to authorized users
+- Consistent UI/UX
+- Standardized theming
+- Component‑based layout
+- Brand‑aligned color palette
+- Navigation buttons across all screens
+
+Users
+- Team Leads
+- Department Supervisors
+- Department Managers
+- Technical Analysts
+- Business Analysts
+- System Admin Technicians
+
+Technical Highlights
+- Canvas Power App built from a blank canvas
+- SharePoint Lists for data storage and security tables
+- Power Automate for workflow automation and notifications
+- Power Fx for logic, validation, and UI behavior
+- Governance, security, and scalability built into the design
+- ALM practices using dev/test/prod environments
+
+Impact
+- Ensures new hires have correct system access and equipment on day one
+- Streamlines all access and equipment requests into one centralized location
+- Consolidates previously scattered governance documentation
+- Improves asset accountability and reduces lost equipment
+- Automates follow‑ups and overdue reminders for loaner laptops
+- Provides leadership with real‑time visibility into requests and assets
+- Reduces manual work and eliminates process inconsistencies
+- Strengthens audit readiness and operational governance
+
+My Role
+I was the sole designer, architect, and developer of this application.
+This was the first Power App I built, and I transformed a legacy Access database into a modern, scalable Power Platform solution. I expanded the tool with new features that improved processing efficiency, enhanced asset tracking, and centralized governance documentation.
+I built the app from a blank canvas, designed the data model, created all Power Automate flows, implemented security, and delivered a fully governed, enterprise‑ready solution.
 
